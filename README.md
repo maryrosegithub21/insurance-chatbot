@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Insurance Chatbot
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Getting Started
 
 In the project directory, you can run:
 
@@ -29,42 +29,41 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This React component ChatBot serves as an AI insurance policy assistant. Users can interact with the chatbot by typing messages and receiving responses. The chatbot also provides options for the user to select.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Installation
+Clone the repository.
+Install dependencies using npm install.
+Start the development server with npm start.
+Usage
+The chatbot interface consists of a chat window where messages are displayed.
+Users can type messages in the input field and submit them by clicking the "Submit" button.
+If the chatbot provides options in the form of buttons, users can click on the buttons to select an option.
+Features
+Message Display: Messages from both the user and the chatbot are displayed in the chat window.
+User Input: Users can type messages in the input field and submit them to the chatbot.
+Options Selection: If the chatbot presents options as buttons, users can click on the buttons to interact further.
+Components
+ChatBot: The main component that handles the chat interface and communication with the AI backend.
+Functions
+handleSubmit: Handles the submission of user messages. It sends the message to the AI backend and displays the response.
+handleOptionClick: Handles the selection of options presented by the chatbot. It sends the selected option to the AI backend and displays the response.
+Dependencies
+React: Used for building the user interface.
+useState: Hook for managing component state.
+fetch: Used for making asynchronous requests to the AI backend.
+Styling
+The component uses a CSS file ChatBot.css for styling the chat interface.
+Environment Variables
+The component uses REACT_APP_API_URL environment variable to determine the API endpoint for communicating with the AI backend.
+Error Handling
+Errors that occur during communication with the AI backend are logged to the console, and a generic error message is displayed to the user.
+Note
+Ensure to set the REACT_APP_API_URL environment variable to the appropriate API endpoint before running the application.
